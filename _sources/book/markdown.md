@@ -75,7 +75,7 @@ this pattern:
 ```
 Some content {rolename}`and here is my role's content!`
 ```
-
+[Link to Index](index)  # Correct way
 Again, roles will only work if `rolename` is a valid role's name. For example,
 the `doc` role can be used to refer to another page in your book. You can
 refer directly to another page by its relative path. For example, the
