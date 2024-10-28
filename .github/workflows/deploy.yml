@@ -6,6 +6,10 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write
+  pages: write
+
 # This job installs dependencies, build the book, and pushes it to `gh-pages`
 jobs:
   build-and-deploy-book:
