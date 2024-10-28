@@ -4,7 +4,11 @@ on:
   # Trigger the workflow on push to main branch
   push:
     branches:
-      - master
+      - main
+
+permissions:
+  contents: write
+  pages: write
 
 # This job installs dependencies, build the book, and pushes it to `gh-pages`
 jobs:
@@ -37,3 +41,4 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./_build/html
+        force: true  # Add this line
